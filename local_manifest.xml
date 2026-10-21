@@ -5,7 +5,7 @@
   <remote name="gl" fetch="https://gitlab.com/" />
 
   <!-- Device trees -->
-  <project path="device/xiaomi/dash" name="oss-dash/android_device_xiaomi_dash" remote="gh" revision="lineage-24.0" />
+  <project path="device/xiaomi/dash" name="oss-dash/android_device_xiaomi_dash" remote="gh" revision="lineage-24.0-oss-kernel" />
   <project path="device/xiaomi/dash-miuicamera" name="oss-dash/android_device_xiaomi_dash-miuicamera" remote="gh" revision="lineage-24.0" />
 
   <!-- Vendor blobs -->
@@ -14,6 +14,15 @@
 
   <!-- Kernel -->
   <project path="device/xiaomi/dash-kernel" name="oss-dash/android_device_xiaomi_dash-kernel" remote="gh" revision="lineage-24.0" />
+
+  <!-- Kernel sources (built by device/xiaomi/dash/kernel/build-kernel.sh) -->
+  <project path="kernel/xiaomi/dash/kernel-6.6" name="oss-dash-kernel/android_kernel_xiaomi_dash" remote="gh" revision="dash-w-oss" />
+  <project path="kernel/xiaomi/dash/build" name="oss-dash-kernel/android_kernel_xiaomi_dash_build" remote="gh" revision="dash-w-oss" />
+  <project path="kernel/xiaomi/dash/vendor/mediatek/kernel_modules" name="oss-dash-kernel/android_kernel_xiaomi_dash_mtk_modules" remote="gh" revision="dash-w-oss" />
+  <project path="kernel/xiaomi/dash/device-modules" name="oss-dash-kernel/android_kernel_xiaomi_dash_device_modules" remote="gh" revision="dash-w-oss" />
+
+  <!-- Toolchain: the clang the kernel pins (r510928, clang 18) -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r510928" name="oss-dash/android_prebuilts_clang_host_linux-x86_clang-r510928" remote="gl" revision="lineage-24.0" />
 
   <!-- Hardware -->
   <project path="hardware/mediatek" name="oss-dash/android_hardware_mediatek" remote="gh" revision="lineage-24.0" />
