@@ -28,6 +28,8 @@
   <!-- Patches -->
   <remove-project name="LineageOS/android_vendor_qcom_opensource_vibrator" />
   <project path="vendor/qcom/opensource/vibrator" name="oss-dash/android_vendor_qcom_opensource_vibrator" remote="gh" revision="lineage-24.0" />
+  <remove-project name="packages_modules_Wifi" />
+  <project path="packages/modules/Wifi" name="oss-dash/android_packages_modules_Wifi" remote="gh" revision="cnb" />
 
   <!-- Kernel -->
   <project path="kernel/platform/kernel-6.6/kernel-6.6" name="oss-dash-kernel/android_kernel" remote="gh" revision="lineage-24.0" groups="kernel-platform,kernel-platform-66" />
